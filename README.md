@@ -11,14 +11,14 @@ bundle install
 ```
 
 Then run locally:
-
+****
 ```bash
 bundle exec jekyll serve
 ```
 
 ## LICENSE
 
-Mugilan Mariappan. 
+Mugilan Mariappan.
 
 Website content under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 
 International License. To view a copy of this license, 
