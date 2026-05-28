@@ -36,8 +36,8 @@ body {
 }
 
 .paper {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;    /* Brought down from 1rem to prevent excessive padding stacking */
+  padding-bottom: 0.5rem;   /* Keeps a subtle separator between individual papers */
 }
 
 .award > :not(.title),
@@ -49,9 +49,14 @@ body {
   font-size: 1.1em;
 }
 
-.title2{
-  font-size: 1.6em;
-  margin-top: 1rem;
+.title2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 1.3rem;       /* Reduced from 2rem to drastically close the gap between sections */
+  margin-bottom: 0.8rem;     /* Clean, tight spacing before content starts */
+  border-bottom: 2px solid #005996; 
+  padding-bottom: 4px;
 }
 
 .paper-links {
@@ -81,6 +86,16 @@ body {
   padding-bottom: 0.6rem;
 }
 
+a {
+  color: #005996;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #1a73e8; /* Vibrant highlight blue on hover */
+  text-decoration: underline;
+}
 
 /* #footer a, #footer span {
   color: #272727;
