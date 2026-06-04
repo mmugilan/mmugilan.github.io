@@ -26,9 +26,15 @@ body {
   text-align: center;
 }
 
-.avatar{
-  padding-top:  30%;
+.avatar {
   padding-bottom: 20px;
+}
+
+/* Only apply the large top padding on desktop screens */
+@media (min-width: 768px) {
+  .avatar {
+    padding-top: 30%;
+  }
 }
 
 .social{
