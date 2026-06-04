@@ -31,9 +31,10 @@ body {
 }
 
 /* Only apply the large top padding on desktop screens */
-@media (min-width: 768px) {
-  .avatar {
-    padding-top: 30%;
+@media (max-width: 767px) {
+  .social h5 a {
+    margin: 0 12px; /* Adds horizontal breathing room between touch targets */
+    display: inline-block;
   }
 }
 
