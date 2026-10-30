@@ -26,9 +26,23 @@ body {
   text-align: center;
 }
 
-.avatar{
-  padding-top:  30%;
+.avatar {
   padding-bottom: 20px;
+}
+
+/* Only apply the large top padding on desktop screens */
+@media (min-width: 768px) {
+  .avatar {
+    padding-top: 30%;
+  }
+}
+
+/* Mobile social icon spacing */
+@media (max-width: 767px) {
+  .social h5 a {
+    margin: 0 12px; /* Adds horizontal breathing room between touch targets */
+    display: inline-block;
+  }
 }
 
 .social{
@@ -45,8 +59,21 @@ body {
   font-size: 0.9em;
 }
 
-.title{
+.title {
   font-size: 1.1em;
+  line-height: 1.4; /* Adds slightly more breathing room between wrapped lines on all devices */
+}
+
+/* --- Mobile-Specific Font Adjustments --- */
+@media (max-width: 767px) {
+  .title {
+    font-size: 0.95em; /* Scales down the title to prevent awkward word breaks */
+  }
+  
+  .award > :not(.title),
+  .citation > :not(.title) {
+    font-size: 0.85em; /* Scales down the authors and venue text proportionally */
+  }
 }
 
 .title2 {
