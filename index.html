@@ -4,251 +4,253 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal Landing Page">
+  <meta name="description"
+    content="Mugilan Mariappan: PhD in Computing Science (Simon Fraser University). Parallel systems, incremental computation, and streaming graph processing.">
   <meta name="author" content="Mugilan Mariappan">
-  <!-- <link rel="favicon" href="/static/img/favicon.ico"> -->
   <title>Mugilan Mariappan</title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Custom styles for this template -->
-  <link href="/static/css/main.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/static/css/main.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEZT2FKEEK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CEZT2FKEEK');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEZT2FKEEK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
 
-  gtag('config', 'G-CEZT2FKEEK');
-</script>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-3 mb-5 mb-md-0" style="text-align:center;">
         <div class="avatar">
-          <img class="rounded-circle" src="/static/img/mugilan-linkedin-photo.jpeg" alt="Responsive image"
+          <img class="rounded-circle" src="/static/img/mugilan-linkedin-photo.jpeg" alt="Photo of Mugilan Mariappan"
             style="max-width: 200px; height: auto;">
         </div>
-
-        <div class='left-name'>Mugilan Mariappan</div>
-        <div class='left-mail'><a href="mailto:mmariapp@cs.sfu.ca">mmariapp@cs.sfu.ca</a></div>
+        <div class="left-name">Mugilan Mariappan</div>
+        <div class="left-mail"><a href="mailto:mmariapp@sfu.ca">mmariapp@sfu.ca</a></div>
         <div class="social">
           <h5>
-            <a href="https://github.com/mmugilan"><i class="fab fa-github"></i></a>
-            <!-- <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> -->
-            <!-- <a href="https://medium.com/@"><i class="fab fa-medium"></i></a> -->
-            <a href="https://linkedin.com/in/mugilanmariappan"><i class="fab fa-linkedin"></i></a>
-            <a href="https://scholar.google.ca/citations?user=wW_Yav4AAAAJ"><i class="fas fa-graduation-cap"></i></a>
-            <!-- <a href="https://orcid.org/"><i class="fas fa-info-circle"></i></a> -->
+            <a href="https://github.com/mmugilan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/mugilanmariappan" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.ca/citations?user=wW_Yav4AAAAJ" aria-label="Google Scholar"><i
+                class="fas fa-graduation-cap"></i></a>
           </h5>
         </div>
         <div style="margin-top: 15px;">
           <a href="/static/cv.pdf" class="btn btn-outline-dark btn-sm"><i class="fas fa-file-pdf"></i> Download CV</a>
         </div>
-
-
-
       </div>
-      <div class="col-md-9">
 
-        <div class='my_title'>
-          <p>
+      <div class="col-md-9">
+        <div class="my_title">
           <h2>Mugilan Mariappan</h2>
-          </p>
         </div>
 
-        <p>I am a final-year Ph.D. Candidate in Computer Science at <a href="https://www.sfu.ca/">Simon Fraser
-            University</a>, advised by <a href="https://www.cs.sfu.ca/~keval/">Prof. Keval Vora</a>. My research focuses
-          on building high-performance, large-scale systems infrastructure for streaming graph processing.
-        </p>
+        <p>I recently defended my Ph.D. in Computing Science at <a href="https://www.sfu.ca/">Simon Fraser
+            University</a> (October 2026), advised by <a href="https://www.cs.sfu.ca/~keval/">Prof. Keval Vora</a>. I design parallel systems for processing constantly changing data, with a focus on incremental computation over streaming graphs.</p>
+        <p>I built GraphBolt and DZiG, engines that update graph analytics incrementally as the graph changes, with BSP correctness guarantees. GraphBolt achieves a median 18&times; speedup over recomputation on billion-edge graphs on a single machine. I open-sourced the end-to-end parallel C++ system on <a href="https://github.com/pdclab/graphbolt">GitHub</a>, and also built Olfin, a concurrent graph ingestion system with tunable ordering guarantees. Before my Ph.D., I was a software engineer at athenaHealth for three years, and I interned at the LinkedIn Graph Systems Lab.</p>
+        <p><strong>I am on the job market</strong> for research scientist, research engineer, and software engineering roles in systems.</p>
+        <p>I am part of the <a href="https://github.com/pdclab">Parallel and Distributed Computing Lab (PDCL)</a> and the <a href="https://systems.cs.sfu.ca/">Systems</a> group at SFU. More details are in my <a href="/static/cv.pdf">CV (PDF)</a>.</p>
 
-        <p>I built <a href="https://github.com/pdclab/graphbolt">GraphBolt and DZiG</a> to perform incremental
-          computation on streaming graphs, enabling real-time analytics on large-scale mutations with provable
-          correctness guarantees.</p>
-
-        <p>I am part of the <a href="https://github.com/pdclab">Parallel and Distributed Computing Lab (PDCL)</a> and
-          the <a href="https://systems.cs.sfu.ca/">Systems</a> group at SFU.</p>
-
-        <p>My full curriculum vitae is available <a href="/static/cv.pdf">here</a>.</p>
-
-        <!-- <p>I am a PhD student at <a href="https://www.sfu.ca/">Simon Fraser University</a>, advised by <a
-            href="https://www.cs.sfu.ca/~keval/">Prof. Keval Vora</a>. My research is on developing tools and techniques
-          for large-scale graph processing.</p>
-
-        <p>I built <a href="https://github.com/pdclab/graphbolt">GraphBolt and DZiG</a> to perform
-          incremental computation on streaming graphs, and to enable real-time analytics on large-scale streaming graphs
-          with provable correctness guarantees.</p> -->
-
-        <!--       <p>Recently, I interned at LinkedIn Graph Systems Lab, working with <a href="http://www.juancol.me/">Dr. Juan Colmenares</a> from LinkedIn and <a href="https://humming80.github.io/">Dr. Yuanyuan Tian</a> from Microsoft Gray Systems Lab.</p> -->
-
-
-        <!-- <p>If you are interested in my work, check out my <a href="/static/cv-detailed.pdf">CV</a>. </p> -->
-
-        <!-- <p>I am part of the <a href="https://github.com/pdclab">Parallel and Distributed Computing Lab (PDCL)</a> and the
-      <a href="https://systems.cs.sfu.ca/">Systems</a> group at SFU.</p> -->
-
-        <!--       <br>
-      <div class=title2>
-        Research Interests
-      </div>
-      <div class='paper'>
-        <p>Streaming graph processing, incremental computing, graph databases, graph mining, and graph learning.</p>
-      </div> -->
+        <!-- Research Interests -->
         <div class="title2">Research Interests</div>
         <div class="paper">
-          <p>High-performance Graph Processing, Streaming Graph Systems, Graph Neural Network (GNN) Infrastructure, and
-            Graph Database Systems.</p>
+          <p>Streaming graph processing, graph databases, and GNN infrastructure, with emphasis on parallelism, incremental computation, and dynamic data structures.</p>
         </div>
 
-        <div class=title2>
-          Publications
-        </div>
-        <div class=row>
+        <!-- Publications -->
+        <div class="title2">Publications</div>
+        <div class="row">
           <div class="col-md-10" style="text-align:left;">
-            <div class='paper'>
-              <div class='citation'>
-                <div class='title'>Threshold Strategy for Leaking Corner-Free Hamilton-Jacobi Reachability with
-                  Decomposed Computations</div>
-                <div class='authors'>Chong He, <strong>Mugilan Mariappan</strong>, Keval Vora, Mo Chen </div>
-                <div class='venue'>IEEE Conference on Decision and Control (CDC), December 2025.</div>
+            <div class="paper">
+              <div class="citation">
+                <div class="title">Threshold Strategy for Leaking Corner-Free Hamilton-Jacobi Reachability with Decomposed Computations</div>
+                <div class="authors">Chong He, <strong>Mugilan Mariappan</strong>, Keval Vora, Mo Chen</div>
+                <div class="venue">IEEE Conference on Decision and Control (CDC), December 2025.</div>
               </div>
               <div class="paper-links">
-                <nav>
-                  [<a href="static/papers/cdc25.pdf">paper</a>]
-                </nav>
+                <nav>[<a href="/static/papers/leaking-corner-cdc25.pdf">paper</a>]</nav>
               </div>
             </div>
           </div>
           <div class="col-md-2 d-none d-md-block" style="text-align:right;">
-            <div class='left-venue'>CDC 2025</div>
+            <div class="left-venue">CDC 2025</div>
           </div>
         </div>
-        <div class=row>
+        <div class="row">
           <div class="col-md-10" style="text-align:left;">
-            <!-- <li> -->
-            <div class='paper'>
-              <div class='citation'>
-                <div class='title'>Anti-Vertex For Neighborhood Constraints In Subgraph Queries</div>
-                <div class='authors'>Kasra Jamshidi, <strong>Mugilan Mariappan</strong>, Keval Vora</div>
-                <div class='venue'>Proceedings of the ACM SIGMOD Joint International Workshop on Graph Data Management
-                  Experiences & Systems (GRADES) and Network Data Analytics (NDA), Philadelphia, June 2022.</div>
+            <div class="paper">
+              <div class="citation">
+                <div class="title">Anti-Vertex for Neighborhood Constraints in Subgraph Queries</div>
+                <div class="authors">Kasra Jamshidi, <strong>Mugilan Mariappan</strong>, Keval Vora</div>
+                <div class="venue">Proceedings of the ACM SIGMOD Joint International Workshop on Graph Data Management Experiences &amp; Systems (GRADES) and Network Data Analytics (NDA), Philadelphia, June 2022.</div>
               </div>
               <div class="paper-links">
-                <nav>
-                  [<a href="static/papers/anti-vertex-grades22.pdf">paper</a>]
-                  [<a href="https://www.youtube.com/watch?v=0gb_rlIDnJQ">video</a>]
-                </nav>
-              </div>
-            </div>
-            <!-- </li> -->
-
-          </div>
-          <div class="col-md-2 d-none d-md-block" style="text-align:right;">
-            <div class='left-venue'>GRADES-NDA 2022</div>
-          </div>
-
-        </div>
-
-        <div class=row>
-          <div class="col-md-10" style="text-align:left;">
-            <div class='paper'>
-              <div class='citation'>
-                <div class='title'>DZiG: Sparsity-Aware Incremental Processing of Streaming Graphs </div>
-                <div class='authors'><strong> Mugilan Mariappan</strong>, Joanna Che, and Keval Vora</div>
-                <div class='venue'>European Conference on Computer Systems, United Kingdom, April 2021.</div>
-
-              </div>
-
-              <div class="paper-links">
-                <nav>
-                  [<a href="static/papers/dzig-eurosys21.pdf">paper</a>]
-                  [<a
-                    href="https://www.youtube.com/watch?v=PzeE2ModlnA&list=PL3exzorTKOw_OKPHfll1u4_r5SeE7h3Ez">video</a>]
-                  [<a href="static/slides/dzig-eurosys21-slides.pdf">presentation</a>]
-                  [<a href="https://github.com/pdclab/graphbolt">github</a>]
-                </nav>
+                <nav>[<a href="/static/papers/anti-vertex-grades22.pdf">paper</a>] [<a
+                    href="https://www.youtube.com/watch?v=0gb_rlIDnJQ">video</a>]</nav>
               </div>
             </div>
           </div>
           <div class="col-md-2 d-none d-md-block" style="text-align:right;">
-            <div class='left-venue'>EuroSys 2021</div>
+            <div class="left-venue">GRADES-NDA 2022</div>
           </div>
-
         </div>
-
-        <div class=row>
+        <div class="row">
           <div class="col-md-10" style="text-align:left;">
-            <div class='paper'>
-              <div class='citation'>
-                <div class='title'>GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs </div>
-                <div class='authors'><strong> Mugilan Mariappan</strong> and Keval Vora</div>
-                <div class='venue'>European Conference on Computer Systems, Dresden, March 2019.</div>
+            <div class="paper">
+              <div class="citation">
+                <div class="title">DZiG: Sparsity-Aware Incremental Processing of Streaming Graphs</div>
+                <div class="authors"><strong>Mugilan Mariappan</strong>, Joanna Che, and Keval Vora</div>
+                <div class="venue">European Conference on Computer Systems (EuroSys), United Kingdom, April 2021.</div>
               </div>
               <div class="paper-links">
-                <nav>
-                  [<a href="static/papers/graphbolt-eurosys19.pdf">paper</a>]
-                  [<a href="https://www.youtube.com/watch?v=YfEVfyhxG9M">video</a>]
-                  [<a href="static/slides/graphbolt-eurosys19-slides.pdf">presentation</a>]
-                  [<a href="https://github.com/pdclab/graphbolt">github</a>]
-                </nav>
+                <nav>[<a href="/static/papers/dzig-eurosys21.pdf">paper</a>] [<a
+                    href="https://www.youtube.com/watch?v=PzeE2ModlnA&amp;list=PL3exzorTKOw_OKPHfll1u4_r5SeE7h3Ez">video</a>]
+                  [<a href="/static/slides/dzig-eurosys21-slides.pdf">presentation</a>] [<a
+                    href="https://github.com/pdclab/graphbolt">github</a>]</nav>
               </div>
             </div>
           </div>
           <div class="col-md-2 d-none d-md-block" style="text-align:right;">
-            <div class='left-venue'>EuroSys 2019</div>
+            <div class="left-venue">EuroSys 2021</div>
           </div>
-
         </div>
-
-        <div class=title2>
-          Awards
-        </div>
-        <div class=row>
+        <div class="row">
           <div class="col-md-10" style="text-align:left;">
-            <div class='award'>
+            <div class="paper">
+              <div class="citation">
+                <div class="title">GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs</div>
+                <div class="authors"><strong>Mugilan Mariappan</strong> and Keval Vora</div>
+                <div class="venue">European Conference on Computer Systems (EuroSys), Dresden, March 2019.</div>
+              </div>
+              <div class="paper-links">
+                <nav>[<a href="/static/papers/graphbolt-eurosys19.pdf">paper</a>] [<a
+                    href="https://www.youtube.com/watch?v=YfEVfyhxG9M">video</a>] [<a
+                    href="/static/slides/graphbolt-eurosys19-slides.pdf">presentation</a>] [<a
+                    href="https://github.com/pdclab/graphbolt">github</a>]</nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block" style="text-align:right;">
+            <div class="left-venue">EuroSys 2019</div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="title2">Experience</div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="paper">
+              <div class="citation">
+                <div class="title">Simon Fraser University, PDC Lab</div>
+                <div class="authors"><em>Graduate Research Assistant</em></div>
+                <div class="venue">Built GraphBolt, DZiG, and Olfin; mentored 6 graduate and undergraduate students.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block" style="text-align:right;">
+            <div class="left-venue">2018&ndash;2026</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="paper">
+              <div class="citation">
+                <div class="title">LinkedIn Graph Systems Lab</div>
+                <div class="authors"><em>Graduate Research Intern</em>, with <a href="http://www.juancol.me/">Dr. Juan
+                    Colmenares</a> (LinkedIn) and <a href="https://humming80.github.io/">Dr. Yuanyuan Tian</a>
+                  (Microsoft Gray Systems Lab)</div>
+                <div class="venue">Benchmarked the Liquid graph database on LDBC Social Network Benchmark complex queries and surfaced design constraints that informed a rearchitecture of its query processing.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block" style="text-align:right;">
+            <div class="left-venue">2022</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="paper">
+              <div class="citation">
+                <div class="title">athenaHealth</div>
+                <div class="authors"><em>Software Engineer</em></div>
+                <div class="venue">Rearchitected the athenaText secure messaging module, cutting crashes by 50%, and extended search indexing and ranking for Epocrates.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block" style="text-align:right;">
+            <div class="left-venue">2014&ndash;2017</div>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="title2">Software</div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="paper">
+              <div class="citation">
+                <div class="title"><a href="https://github.com/pdclab/graphbolt">GraphBolt / DZiG</a></div>
+                <div class="venue">End-to-end parallel C++ system for streaming graph analytics (stream ingestor, dynamic graph store, incremental engines), with a framework for developing new graph analytics that run incrementally on evolving graphs with correctness guarantees. Open source (MIT).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Talks -->
+        <div class="title2">Talks</div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="award">
+              <ul>
+                <li>GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs, EuroSys, Dresden [<a
+                    href="/static/slides/graphbolt-eurosys19-slides.pdf">slides</a>] [<a
+                    href="https://www.youtube.com/watch?v=YfEVfyhxG9M">video</a>] - 2019</li>
+                <li>Incremental Graph Processing With GraphBolt and DZiG, Microsoft Gray Systems Lab, Sunnyvale - 2022
+                </li>
+                <li>Incremental Graph Processing With GraphBolt and DZiG, LinkedIn, Mountain View - 2022</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="title2">Awards</div>
+        <div class="row">
+          <div class="col-md-10" style="text-align:left;">
+            <div class="award">
               <ol>
                 <li><a
                     href="https://www.sfu.ca/computing/newsandevents/2022/computing-science-graduate-student-receives-scholarship.html">Helmut
-                    & Hugo Eppich Family Grad Scholarship - 2022</a></li>
-                <li>
-                  CMPT Graduate Fellowship, Simon Fraser University - 2019, 2021, 2022
-                </li>
-                <li>
-                  Graduate Fellowship, Simon Fraser University - 2018, 2020, 2022, 2023
-                </li>
-                <li>
-                  <a href="https://www.sfu.ca/computing/newsandevents/2019/cs-research-day.html">Best Poster Award, CS
-                    Research Day, Simon Fraser University - 2019</a>
-                </li>
-                <li>
-                  Grad Entrance Scholarship, Simon Fraser University - 2018
-                </li>
-                <li>
-                  Spotlight Award, athenaHealth - 2014, 2015, 2017
-                </li>
+                    &amp; Hugo Eppich Family Graduate Scholarship - 2022</a></li>
+                <li>Best Poster Award (with Kasra Jamshidi), CS Research Day, Simon Fraser University - 2022</li>
+                <li>CMPT Graduate Fellowship, Simon Fraser University - 2019, 2021, 2022</li>
+                <li>Graduate Fellowship, Simon Fraser University - 2018, 2020, 2022, 2023</li>
+                <li><a href="https://www.sfu.ca/computing/newsandevents/2019/cs-research-day.html">Best Poster Award
+                    (with Joanna Che), CS Research Day, Simon Fraser University - 2019</a></li>
+                <li>Special Graduate Entrance Scholarship, Simon Fraser University - 2018</li>
+                <li>Spotlight Award, athenaHealth - 2014, 2015, 2017</li>
               </ol>
-
             </div>
-
           </div>
         </div>
-
-
       </div>
     </div>
+
     <div id="footer">
       <p class="listline">Attached content is shared under <a rel="license"
-          href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> where applicable. | Website
-        design
-        adapted from <a href="https://github.com/jekyllt/vitae">jekyll vitae</a> template.</p>
+          href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> where applicable. | Website design
+        adapted from the <a href="https://github.com/jekyllt/vitae">jekyll vitae</a> template.</p>
     </div>
   </div>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
+
+  <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -259,19 +261,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <!-- Google Analytics -->
-
-  <!-- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-
-</script>
- -->
 </body>
 
 </html>
