@@ -16,7 +16,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Keep the Google Search Console file out of the sitemap
 defaults:
   # Share image for every page (link previews on LinkedIn, Slack, etc.)
   - scope:
