@@ -1,0 +1,40 @@
+---
+layout: default
+nav: publications
+title: Publications
+permalink: /publications/
+---
+{%- capture me -%}<strong>{{ site.author }}</strong>{%- endcapture -%}
+<h1 class="page-title">Publications</h1>
+<p class="page-intro">Also on <a href="https://scholar.google.ca/citations?user=wW_Yav4AAAAJ">Google Scholar</a>.</p>
+
+<section>
+  <div class="work-list">
+    {%- for pub in site.data.publications %}
+    <article class="work-item">
+      <div class="meta"><span class="tag">{{ pub.tag }}</span></div>
+      <div class="body">
+        <div class="pub-title">{{ pub.title | escape }}</div>
+        <div class="pub-authors">{{ pub.authors | escape | replace: site.author, me }}</div>
+        <div class="pub-venue">{{ pub.venue | escape }}</div>
+        {% include links.html links=pub.links %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Talks</h2>
+  <div class="plain-list">
+    {%- for talk in site.data.talks %}
+    <div class="plain-row">
+      <div class="when">{{ talk.year }}</div>
+      <div>
+        <p>{{ talk.title | escape }}<br><span class="muted">{{ talk.where | escape }}</span></p>
+        {% include links.html links=talk.links %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

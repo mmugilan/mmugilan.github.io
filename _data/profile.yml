@@ -1,0 +1,11 @@
+# Short lists for the Experience page.
+
+education:
+  - { years: "2018–2026", degree: "Ph.D. in Computing Science, Simon Fraser University" }
+  - { years: "2010–2014", degree: "B.E. in Computer Science, Coimbatore Institute of Technology" }
+
+awards:
+  - { years: "2022", name: "Helmut & Hugo Eppich Family Graduate Scholarship, Simon Fraser University" }
+  - { years: "2019, 2022", name: "Best Poster Award, CS Research Day, Simon Fraser University" }
+
+service: "Reviewer for IEEE TKDE. External reviewer for EuroSys, SOSP, USENIX ATC, SIGMOD, and other systems venues."

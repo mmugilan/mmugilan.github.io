@@ -1,0 +1,16 @@
+# Talks, newest first.
+
+- year: 2022
+  title: "Incremental Graph Processing With GraphBolt and DZiG"
+  where: "LinkedIn, Mountain View"
+
+- year: 2022
+  title: "Incremental Graph Processing With GraphBolt and DZiG"
+  where: "Microsoft Gray Systems Lab, Sunnyvale"
+
+- year: 2019
+  title: "GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs"
+  where: "EuroSys, Dresden"
+  links:
+    - { label: "Slides", url: "/static/slides/graphbolt-eurosys19-slides.pdf" }
+    - { label: "Video", url: "https://www.youtube.com/watch?v=YfEVfyhxG9M" }

@@ -1,0 +1,11 @@
+{%- if include.links -%}
+<div class="links">
+  {%- for l in include.links -%}
+  {%- if l.url contains '://' -%}
+  <a href="{{ l.url | escape }}">{{ l.label }}</a>
+  {%- else -%}
+  <a href="{{ l.url | relative_url }}">{{ l.label }}</a>
+  {%- endif -%}
+  {%- endfor -%}
+</div>
+{%- endif -%}

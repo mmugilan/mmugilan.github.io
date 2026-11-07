@@ -1,0 +1,38 @@
+# Publications, in the order they appear on the page.
+# Your name in "authors" is bolded automatically.
+# "links": list only the links that exist; local files start with /static/.
+
+- title: "GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs"
+  authors: "Mugilan Mariappan and Keval Vora"
+  tag: "EuroSys 2019"
+  venue: "European Conference on Computer Systems (EuroSys), Dresden, Germany, 2019"
+  links:
+    - { label: "Paper", url: "/static/papers/graphbolt-eurosys19.pdf" }
+    - { label: "Slides", url: "/static/slides/graphbolt-eurosys19-slides.pdf" }
+    - { label: "Video", url: "https://www.youtube.com/watch?v=YfEVfyhxG9M" }
+    - { label: "Code", url: "https://github.com/pdclab/graphbolt" }
+
+- title: "DZiG: Sparsity-Aware Incremental Processing of Streaming Graphs"
+  authors: "Mugilan Mariappan, Joanna Che, and Keval Vora"
+  tag: "EuroSys 2021"
+  venue: "European Conference on Computer Systems (EuroSys), United Kingdom, 2021"
+  links:
+    - { label: "Paper", url: "/static/papers/dzig-eurosys21.pdf" }
+    - { label: "Slides", url: "/static/slides/dzig-eurosys21-slides.pdf" }
+    - { label: "Video", url: "https://www.youtube.com/watch?v=PzeE2ModlnA&list=PL3exzorTKOw_OKPHfll1u4_r5SeE7h3Ez" }
+    - { label: "Code", url: "https://github.com/pdclab/graphbolt" }
+
+- title: "Anti-Vertex for Neighborhood Constraints in Subgraph Queries"
+  authors: "Kasra Jamshidi, Mugilan Mariappan, and Keval Vora"
+  tag: "GRADES-NDA 2022"
+  venue: "ACM SIGMOD Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA), Philadelphia, USA, 2022"
+  links:
+    - { label: "Paper", url: "/static/papers/anti-vertex-grades22.pdf" }
+    - { label: "Video", url: "https://www.youtube.com/watch?v=0gb_rlIDnJQ" }
+
+- title: "Threshold Strategy for Leaking Corner-Free Hamilton-Jacobi Reachability with Decomposed Computations"
+  authors: "Chong He, Mugilan Mariappan, Keval Vora, and Mo Chen"
+  tag: "CDC 2025"
+  venue: "IEEE Conference on Decision and Control (CDC), 2025"
+  links:
+    - { label: "Paper", url: "/static/papers/leaking-corner-cdc25.pdf" }

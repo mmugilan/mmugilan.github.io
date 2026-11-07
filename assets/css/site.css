@@ -43,9 +43,8 @@
 
 html {
   font-size: 112.5%;
+  /* 18px body text */
 }
-
-/* 18px body text */
 
 body {
   margin: 0;
@@ -296,5 +295,100 @@ a:focus-visible {
 
   .work-item .body {
     padding-top: 0.3rem;
+  }
+}
+/* ---- Sub-pages: titles ---- */
+.page-title {
+  font-size: 2rem;
+  margin: 2.6rem 0 1.8rem;
+}
+
+.page-intro {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: -1.2rem 0 1.8rem;
+}
+
+/* ---- Publications ---- */
+.pub-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.pub-authors strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: 0.92rem;
+  font-style: italic;
+  margin-bottom: 0.55rem;
+}
+
+/* ---- Experience ---- */
+.meta .where {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.org {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.role {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.work-item .body p {
+  margin-bottom: 0.4rem;
+}
+
+.service {
+  font-size: 0.95rem;
+}
+
+/* ---- Two-column lists: label on the left, text on the right ---- */
+.plain-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.plain-row {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  column-gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.plain-row .when {
+  color: var(--muted);
+}
+
+.plain-row p {
+  margin: 0;
+}
+
+.plain-row .links {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 600px) {
+  .plain-row {
+    grid-template-columns: 1fr;
   }
 }
