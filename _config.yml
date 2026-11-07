@@ -19,7 +19,7 @@ defaults:
       path: "google2cd811bd5f6fd61b.html"
     values:
       sitemap: false
-      
+
 # Files Jekyll should not publish
 exclude:
   - README.md
