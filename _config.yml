@@ -1,0 +1,43 @@
+# Site settings
+title: Mugilan Mariappan
+description: >-
+  PhD in Computing Science (Simon Fraser University).
+  Parallel systems, incremental computation, and streaming graph processing.
+author: Mugilan Mariappan
+url: "https://mmugilan.github.io"
+baseurl: ""
+lang: en
+tagline: Parallel and Streaming Graph Systems
+theme: null
+
+# Plugins available on GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  # Share image for every page (link previews on LinkedIn, Slack, etc.)
+  - scope:
+      path: ""
+    values:
+      twitter:
+        card: summary
+      image:
+        path: /static/img/mugilan-share.jpg
+        width: 428
+        height: 428
+        alt: Photo of Mugilan Mariappan
+  # Keep the Google Search Console file out of the sitemap
+  - scope:
+      path: "google2cd811bd5f6fd61b.html"
+    values:
+      sitemap: false
+
+# Files Jekyll should not publish
+exclude:
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+  - vendor/

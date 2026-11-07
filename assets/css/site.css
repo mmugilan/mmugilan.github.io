@@ -1,0 +1,510 @@
+/* ==========================================================================
+   mmugilan.github.io: one stylesheet for every page
+   ========================================================================== */
+
+/* ---- Colour tokens (light) ---- */
+:root {
+  --paper: #fffdfb;
+  --ink: #2b2724;
+  --muted: #6a625c;
+  --rule: #e7e0da;
+  --accent-soft: #fdf2ea;
+  --accent: #bd4520;
+  --nav: #4a433e;
+  --title: #9a3414;
+  --timeline: #d49a86;
+  --graph-opacity: 0.26;
+  --measure: 46rem;
+  --serif: "Source Serif 4", "Source Serif Pro", Charter, "Bitstream Charter", Georgia, serif;
+}
+
+/* ---- Colour tokens (dark) ---- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #161a1e;
+    --ink: #e4e7ea;
+    --muted: #9ba4ae;
+    --rule: #2b3238;
+    --accent: #ff7f57;
+    --accent-soft: #2c1d19;
+    --nav: #c3c9cf;
+    /* --title: #e8805f; */
+    --title: #f2cfbd;
+    --timeline: #8a5546;
+    --graph-opacity: 0.32;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ---- Base ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%;
+  /* 18px body text */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.62;
+  border-top: 5px solid var(--accent);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Background graph over the whole page: clearer in the side margins,
+   very faint (about 5%) behind the content column */
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--accent);
+  opacity: var(--graph-opacity);
+  -webkit-mask: url("../img/graph-bg.svg") center top / 1800px 1400px repeat-y;
+  mask: url("../img/graph-bg.svg") center top / 1800px 1400px repeat-y;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: -0.01em;
+  color: var(--title);
+}
+
+h2 {
+  font-size: 1.15rem;
+  color: var(--title);
+  margin: 2.6rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.02rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+/* Links: accent colour plus a dotted underline, solid on hover */
+a {
+  color: var(--accent);
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+a:hover {
+  text-decoration-style: solid;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ---- Page frame ---- */
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.4rem 0 0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  color: var(--nav);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-footer {
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  margin-top: 3.5rem;
+  padding: 1.2rem 0 2rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+/* ---- Homepage: name, contact row, photo ---- */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.2rem;
+  padding: 2.6rem 0 0;
+}
+
+.intro .text {
+  flex: 1;
+}
+
+.intro h1 {
+  margin-bottom: 0.3rem;
+}
+
+.intro img {
+  width: 140px;
+  height: 140px;
+  margin-top: -0.45rem;
+  /* sits slightly above the name */
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  box-shadow: 0 0 0 4px var(--paper), 0 0 0 7px var(--accent);
+  position: relative;
+  z-index: 1;
+  /* sits on top of the line below */
+}
+
+.reach {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  position: relative;
+  padding-bottom: 1.45rem;
+  /* room above the line */
+}
+
+/* Graph-edge line under the contact links: three nodes, ending at the photo */
+.reach::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: calc(100% + 2.2rem + 70px);
+  /* text column + gap + half the photo */
+  height: 12px;
+  background: var(--accent);
+  -webkit-mask: url("../img/edge-line.svg") right center / 713px 12px no-repeat;
+  mask: url("../img/edge-line.svg") right center / 713px 12px no-repeat;
+}
+
+/* Narrow screens: the contact links wrap, so the line would miss the photo */
+@media (max-width: 800px) {
+  .reach {
+    padding-bottom: 0;
+  }
+
+  .reach::after {
+    display: none;
+  }
+}
+
+/* Tablets: show the node line as a full-width divider under the header instead */
+@media (min-width: 601px) and (max-width: 800px) {
+  .intro {
+    position: relative;
+    padding-bottom: 1.6rem;
+  }
+
+  .intro::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 12px;
+    background: var(--accent);
+    -webkit-mask: url("../img/edge-line.svg") left center / 713px 12px no-repeat;
+    mask: url("../img/edge-line.svg") left center / 713px 12px no-repeat;
+  }
+}
+
+.reach a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.reach a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.reach svg {
+  width: 1.05em;
+  height: 1.05em;
+  fill: var(--accent);
+  flex: none;
+}
+
+/* ---- Homepage: bio and availability note ---- */
+.bio {
+  margin-top: 1.5rem;
+}
+
+.availability {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  padding: 0.7rem 1rem;
+  margin: 1.4rem 0 0;
+}
+
+.availability p {
+  margin: 0;
+}
+
+/* ---- Entry rows: name and venue on the left, details on the right ---- */
+.work-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  column-gap: 1.5rem;
+}
+
+/* Entry names on the homepage (GraphBolt, DZiG, ...) */
+.work-item h3 {
+  color: var(--title);
+}
+
+.work-item .body p {
+  font-size: 0.95rem;
+}
+
+/* Venue or dates under the name: quiet, no box */
+.tag {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ---- Homepage only: timeline with one node per entry ---- */
+.timeline {
+  position: relative;
+}
+
+/* The vertical timeline line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0.75rem;
+  bottom: 0.6rem;
+  border-left: 1.5px solid var(--timeline);
+}
+
+.timeline .meta {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+/* One node per entry */
+.timeline .meta::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.more {
+  margin-top: 2.2rem;
+  font-size: 0.95rem;
+}
+
+/* ---- Phones ---- */
+@media (max-width: 600px) {
+  .topbar {
+    justify-content: center;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding-top: 1.8rem;
+  }
+
+  .intro img {
+    width: 112px;
+    height: 112px;
+    margin-top: 0;
+  }
+
+  .intro h1 {
+    font-size: 1.9rem;
+  }
+
+  .work-item {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item .body {
+    padding-top: 0.3rem;
+  }
+
+  .timeline .body {
+    padding-left: 1.4rem;
+  }
+}
+
+/* ---- Sub-pages: titles ---- */
+.page-title {
+  margin: 2.6rem 0 1.8rem;
+}
+
+.page-intro {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: -1.2rem 0 1.8rem;
+}
+
+/* ---- Publications ---- */
+.pub-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.pub-authors strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: 0.92rem;
+  font-style: italic;
+  margin-bottom: 0.55rem;
+}
+
+/* ---- Experience ---- */
+.meta .where {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.org {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.role {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.work-item .body p {
+  margin-bottom: 0.4rem;
+}
+
+.service {
+  font-size: 0.95rem;
+}
+
+/* ---- Two-column lists: label on the left, text on the right ---- */
+.plain-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.plain-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  column-gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.plain-row .when {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.plain-row p {
+  margin: 0;
+}
+
+.plain-row .links {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 600px) {
+  .plain-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+    margin-top: 1.8rem;
+  }
+}
