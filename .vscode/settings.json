@@ -2,5 +2,11 @@
     "cSpell.words": [
         "Mariappan"
     ],
-    "html.format.wrapLineLength": 0
+    "html.format.wrapLineLength": 0,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "[liquid]": {
+        "editor.formatOnSave": false
+    }
 }
