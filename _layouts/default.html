@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+        <a href="{{ '/experience/' | relative_url }}"{% if page.nav == 'experience' %} aria-current="page"{% endif %}>Experience</a>
+        <a href="{{ '/static/cv.pdf' | relative_url }}">CV (PDF)</a>
+      </nav>
+    </header>
+
+    <main>
+{{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>Content shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> where applicable.</p>
+    </footer>
+  </div>
+</body>
+</html>
