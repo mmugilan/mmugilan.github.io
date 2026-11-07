@@ -1,29 +1,30 @@
-# My personal homepage
+# mmugilan.github.io
 
-Powered by [Jekyll](http://jekyllrb.com/), [Github Pages](https://pages.github.com/) and others.
+Source for my personal website, [mmugilan.github.io](https://mmugilan.github.io), built with Jekyll and hosted on GitHub Pages.
 
+## Editing content
 
-## USAGE
+Most content lives in YAML files under `_data/`:
 
-Install dependencies with bundle:
+- `publications.yml`: papers and their links
+- `talks.yml`: talks
+- `experience.yml`: roles
+- `profile.yml`: education, awards, and service
+
+The pages are `index.html`, `publications.html`, `experience.html`, and `404.html`. The shared frame is `_layouts/default.html`, and all styles are in `assets/css/site.css`. PDFs (CV, papers, slides) and images go in `static/`. `_archive/` holds old photos and is not published.
+
+## Running locally
+
+Needs Ruby 3.3.6 (see `.ruby-version`). Gems install into `vendor/bundle` inside the repo, not globally.
+
 ```bash
+bundle config set --local path vendor/bundle
 bundle install
-```
-
-Then run locally:
-****
-```bash
 bundle exec jekyll serve
 ```
 
-## LICENSE
+Then open http://127.0.0.1:4000. Pushing to `main` publishes the site.
 
-Mugilan Mariappan.
+## License
 
-Website content under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 
-International License. To view a copy of this license, 
-visit [https://creativecommons.org/licenses/by-nc-nd/4.0/](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-Website design adapted from [jekyll vitae template](https://github.com/jekyllt/vitae) and [here](https://biomadeira.github.io/).
-
-Website software under the MIT License (MIT). See [LICENSE](LICENSE.md)
+Site text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Papers and slides: their publishers' terms. Code: MIT, see [LICENSE.md](LICENSE.md).

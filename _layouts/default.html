@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
   <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">  
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
   <div class="page">
     <header class="topbar">
       <nav class="site-nav" aria-label="Main">
-        <a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/publications/' | relative_url }}"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a>
-        <a href="{{ '/experience/' | relative_url }}"{% if page.nav == 'experience' %} aria-current="page"{% endif %}>Experience</a>
+        <a href="{{ '/' | relative_url }}" {% if page.nav=='home' %} aria-current="page" {% endif %}>Home</a>
+        <a href="{{ '/publications/' | relative_url }}" {% if page.nav=='publications' %} aria-current="page" {% endif %}>Publications</a>
+        <a href="{{ '/experience/' | relative_url }}" {% if page.nav=='experience' %} aria-current="page" {% endif %}>Experience</a>
         <a href="{{ '/static/cv.pdf' | relative_url }}">CV</a>
       </nav>
     </header>
@@ -30,7 +30,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>Content shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> where applicable.</p>
+      <p>Site text under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Papers and slides remain under their publishers' terms.</p>
     </footer>
   </div>
   <script data-goatcounter="https://mugilan.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
