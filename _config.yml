@@ -1,12 +1,15 @@
 # Site settings
 title: Mugilan Mariappan
 description: >-
-  Mugilan Mariappan: PhD in Computing Science (Simon Fraser University).
-  Parallel systems, incremental computation, and streaming graph processing.
+  PhD in Computing Science (Simon Fraser University).
+  # Parallel systems, incremental computation, and streaming graph processing.
 author: Mugilan Mariappan
 url: "https://mmugilan.github.io"
 baseurl: ""
 lang: en
+# Square share image: ask X/Twitter for the small-thumbnail layout
+twitter:
+  card: summary
 
 # Plugins available on GitHub Pages
 plugins:
@@ -15,6 +18,16 @@ plugins:
 
 # Keep the Google Search Console file out of the sitemap
 defaults:
+  # Share image for every page (link previews on LinkedIn, Slack, etc.)
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /static/img/mugilan-share.jpg
+        width: 428
+        height: 428
+        alt: Photo of Mugilan Mariappan
+  # Keep the Google Search Console file out of the sitemap
   - scope:
       path: "google2cd811bd5f6fd61b.html"
     values:
