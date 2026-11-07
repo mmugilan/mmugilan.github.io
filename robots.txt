@@ -1,7 +1,0 @@
-User-agent: Googlebot
-Disallow: /static/img/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://mmugilan.github.io/sitemap.xml

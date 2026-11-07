@@ -11,7 +11,15 @@ lang: en
 # Plugins available on GitHub Pages
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
+# Keep the Google Search Console file out of the sitemap
+defaults:
+  - scope:
+      path: "google2cd811bd5f6fd61b.html"
+    values:
+      sitemap: false
+      
 # Files Jekyll should not publish
 exclude:
   - README.md
