@@ -20,4 +20,3 @@ exclude:
   - Gemfile.lock
   - .ruby-version
   - vendor/
-  - static/img/papers-to-read/
