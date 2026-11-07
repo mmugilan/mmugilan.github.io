@@ -10,7 +10,9 @@ permalink: /experience/
   <div class="work-list">
     {%- for job in site.data.experience %}
     <article class="work-item">
-      <div class="meta"><span class="tag">{{ job.dates }}</span><div class="where">{{ job.where | escape }}</div></div>
+      <div class="meta"><span class="tag">{{ job.dates }}</span>
+        <div class="where">{{ job.where | escape }}</div>
+      </div>
       <div class="body">
         <div class="org">{{ job.org | escape }}</div>
         <div class="role">{{ job.role | escape }}</div>
@@ -25,7 +27,10 @@ permalink: /experience/
   <h2>Education</h2>
   <div class="plain-list">
     {%- for e in site.data.profile.education %}
-    <div class="plain-row"><div class="when">{{ e.years }}</div><p>{{ e.degree | escape }}</p></div>
+    <div class="plain-row">
+      <div class="when">{{ e.years }}</div>
+      <p>{{ e.degree | escape }}</p>
+    </div>
     {%- endfor %}
   </div>
 </section>
@@ -34,14 +39,24 @@ permalink: /experience/
   <h2>Selected awards</h2>
   <div class="plain-list">
     {%- for a in site.data.profile.awards %}
-    <div class="plain-row"><div class="when">{{ a.years }}</div><p>{{ a.name | escape }}</p></div>
+    <div class="plain-row">
+      <div class="when">{{ a.years }}</div>
+      <p>{{ a.name | escape }}</p>
+    </div>
     {%- endfor %}
   </div>
 </section>
 
 <section>
   <h2>Service</h2>
-  <p class="service">{{ site.data.profile.service | escape }}</p>
+  <div class="plain-list">
+    {%- for s in site.data.profile.service %}
+    <div class="plain-row">
+      <div class="when">{{ s.role }}</div>
+      <p>{{ s.venues | escape }}</p>
+    </div>
+    {%- endfor %}
+  </div>
 </section>
 
 <p class="more">Full details, including all awards, fellowships, and service, are in my <a href="{{ '/static/cv.pdf' | relative_url }}">CV (PDF)</a>.</p>

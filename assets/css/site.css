@@ -32,6 +32,10 @@
     --tag-ink: #ffb39c;
     --tag-edge: rgba(255, 127, 87, 0.55);
   }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 /* ---- Base ---- */
